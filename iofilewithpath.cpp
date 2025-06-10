@@ -7,7 +7,7 @@ int main()
 {
    string baris;
    string namafile;
-   
+
 
     cout << "memasukan nama file : ";
     cin >> namafile;
@@ -16,6 +16,7 @@ int main()
 
     outfile.open(namafile + ". txt", ios::out);
     cout << ">= Menulis File, \'q\' untuk keluar" << endl;
+    
 
      while (true)
     {
