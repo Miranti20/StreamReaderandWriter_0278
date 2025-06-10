@@ -9,6 +9,7 @@ int main()
         throw 5; //melemparkan sebuah integer maka
         cout << "Pernyataan tidak akan dieksekusi" << endl;
     }
+    
     catch (int a) {
         //blok ini akan dieksekusi
         cout << "Pengecualian akan dieksekuasi" << endl;
