@@ -19,7 +19,23 @@ int main() {
         //mendapatkan setiap karakter dalam satu baris
         getline(cin, baris);
         //loop akan berhenti jika anda memasukan karakter q
+        if (baris == "q")
+            break;
+        //menilis dan memasukkan nilai dari 'baris' ke dalam file
         outfile << baris << endl;
     }
-    
+    //selesai dalam menulis sekarang tutup filenya
+    outfile.close();
+
+    //membuka file dalam mode membaca
+    ifstream infile;
+    //menunjuk ke sebuah file
+    infile.open("contohfile.txt");
+
+    cout << endl
+        << ">= membuka dan membaca file " << endl;
+    // jika file ada maka
+    if (infile.is_open())
+{
+
 }
